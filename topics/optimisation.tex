@@ -129,7 +129,7 @@ $f: \mathbb{R} \rightarrow \mathbb{R}$ is a differentiable function.
       J(\w + \epsilon \h) &= \sqrt{f(\w+\epsilon \h)} \\
                           &= \sqrt{f(\w)} + \epsilon \frac{1}{2\sqrt{f(\w)}} 2\w^\top \h + O(\epsilon^2)\\
                           &= \sqrt{f(\w)} + \epsilon \frac{\w^\top}{\sqrt{f(\w)}}\h + O(\epsilon^2)\\
-                          &= J(\w) +  \epsilon \frac{\w^\top}{\sqrt{||\w||_2}}\h + O(\epsilon^2)
+                          &= J(\w) +  \epsilon \frac{\w^\top}{||\w||_2}\h + O(\epsilon^2)
     \end{align}
     so that
     \begin{equation}
